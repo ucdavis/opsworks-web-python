@@ -2,9 +2,9 @@ source 'https://supermarket.getchef.com'
 # source 'http://cookbooks.opscode.com/api/v1/cookbooks'
 # source 'https://api.berkshelf.com'
 
-cookbook 'redis', github: 'coderanger/chef-redis', tag: '1.0.4'
-cookbook 'glusterfs', github: 'alecpm/glusterfs-cookbook', tag: '0.2.0'
-cookbook 'supervisor', github: 'poise/supervisor', ref: '7c9aa287f66327a062287c1cb4b97b225d886e7c'
+cookbook 'redis', git: 'https://github.com/coderanger/chef-redis.git', tag: '1.0.4'
+cookbook 'glusterfs', git: 'https://github.com/alecpm/glusterfs-cookbook.git', tag: '0.2.0'
+cookbook 'supervisor', git: 'https://github.com/poise/supervisor.git', ref: '7c9aa287f66327a062287c1cb4b97b225d886e7c'
 # cookbook 'papertrail', github: 'librato/papertrail-cookbook', tag: '0.0.6'
 # cookbook "traceview", github: 'Optaros/tracelytics-chef', ref: 'e0f1b2bd7b72956963626da2788c9cc6b2b90294'
 # cookbook 's3fs-fuse', github: 'alecpm/s3fs-fuse'
@@ -34,7 +34,7 @@ cookbook 'hostsfile', '= 2.4.6'
 cookbook 'curl', '2.0.0'
 cookbook 'windows', '1.44.3'
 cookbook 'chef_handler', '1.4.0'
-cookbook 'certbot', :github => "alecpm/chef-certbot"
+cookbook 'certbot', :git => "https://github.com/alecpm/chef-certbot.git", :ref => '407c0c7f9876d25796ac7cdf243c7728faba4327'
 
 # Chef 11 compat
 cookbook 'cron', '3.0.0'
@@ -42,7 +42,7 @@ cookbook 'system', '= 0.9.1'
 cookbook 'ohai', '= 3.0.1'
 
 # avoid certbot override
-cookbook 'nginx', :github => "aws/opsworks-cookbooks", :rel => 'nginx', :tag => 'release-chef-11.10'
+cookbook 'nginx', :git => "https://github.com/aws/opsworks-cookbooks.git", :rel => 'nginx', :tag => 'release-chef-11.10'
 
 # Uncomment the items below for testing deployments with Vagrant
 
